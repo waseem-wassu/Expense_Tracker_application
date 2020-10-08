@@ -5,7 +5,7 @@ const Header = () => {
     <div>
 
           <h2>
-          Expense Tracker by waseem
+          Expense Tracker 
           </h2>
     </div>
   )
