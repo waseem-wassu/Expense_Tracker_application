@@ -1,0 +1,98 @@
+// <Header/>
+// <Balance />
+// <AccountSummary/>
+// <TransactionHistory/>
+// <Transaction/>
+// <AddTransaction />
+
+<!--------------------------functions ----------------------->
+<ul className="chupkeAisach">
+     {transactions.map((transaction) => {
+        return (
+
+           <div  key={transaction.id} >
+              <li className="waisachWoh" >
+
+                <span> {transaction.description} </span> <br/>
+                <span> { transaction.amount }</span>
+
+              </li>
+
+            </div>
+           )
+
+
+     })}
+</ul>
+<!--------------------------end of functions ----------------------->
+
+
+<h1>Expense Tracker</h1>
+<h3>Your Balance <br/> $500</h3>
+
+<div className="expense-container">
+ <h3>Income <br/><span className="Colr-1"> $200 </span></h3>
+ <h3>Expense <br/> <span className="Colr-2"> $100 </span></h3>
+</div>
+
+<h3>History</h3>
+<hr/>
+
+<h3>Add New Transaction</h3>
+<form className="form-container">
+<label>
+  <input type="text" placeholder="Description*" required/>
+</label>
+    <br/>
+
+  <label>
+     <input type="number" placeholder="Amount*" required/>
+  </label>
+
+  <br/>
+
+  <input className="btn" type="submit" value="Add New transaction" />
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------seperate files----------------------- */
+
+import Header from "./components/Header";
+import Balance from "./components/Balance";
+import AccountSummary from "./components/AccountSummary";
+import TransactionHistory from "./components/TransactionHistory";
+import Transaction from "./components/Transaction";
+import AddTransaction from  "./components/AddTransaction";
+
+function App() {
+
+  return (
+    <div className="container">
+    <Header/>
+    <Balance />
+    <AccountSummary/>
+
+    <TransactionHistory/>
+
+    <Transaction/>
+    <AddTransaction />
+
+    </div>
+  );
+}
+
+
+//TRANSACTION DATA
+
+
+const

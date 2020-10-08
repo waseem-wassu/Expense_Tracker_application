@@ -1,38 +1,109 @@
-.App {
+
+
+.container{
+  max-width: 400px;
+  min-height: 450px;
+  margin: 0 auto;
+  background-color: #044282;
+  box-shadow: 0 0 10px gray;
+  margin-top: 50px;
+  padding: 15px 50px;
+  color:white;
+
+}
+
+.container h1,h2,h3,h4,h5 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.trnsaction-list > li {
   display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: black;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+
+.trnsaction-list {
+  margin: 0;
+  padding: 0;
+}
+
+.transaction-form input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px 5px;
+}
+
+
+
+.expense-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  /* box-shadow: 0 0 10px gray; */
+}
+
+.Transaction-container {
+
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: black;
+  color:#efefef;
+  padding:2px;
+  margin-top: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.form-container input {
+    width:100%;
+    margin:10px 0;
+    padding: 8px ;
+    border:1px solid #151596;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  background: black;
+  border:none;
+  color:#efefef;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-danger {
+     background: red;
+     border:none;
+     color:#efefef;
+}
+
+.Colr-1 {
+  color: green;
+}
+
+.Colr-2 {
+  color: red;
+}
+
+
+.balanceStyle {
+    font-size: 2rem;
+}
+
+
+.AccountSumStyle {
+    background: black;
+}
+
+
+.TranscationContainer {
+    background-color: black;
+
+}
+
+.TranscationStyle {
+
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  margin-top:3px;
+  align-items:center;
 }
